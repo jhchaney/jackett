@@ -46,6 +46,5 @@ services:
     ports:
     - 9091:9091
     volumes:
-    # In order to the container uses the same date which is in the host, it is necessary to share /etc/localtime file
     - /etc/localtime:/etc/localtime:ro
     - ./tvshows:/var/lib/transmission-daemon/downloads:rw
